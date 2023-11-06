@@ -1,0 +1,29 @@
+.main{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+    background-color: chocolate;
+    transition: 1s ease-out;
+}
+
+.item:hover{
+    /* transform: rotate(-45deg); */
+    /* transform: scale(1.1); */
+    /* transform: skew(45deg); */
+    /* transform: matrix(0, 1, 1, 0, 0, 0) scale(1.5); */
+    transform: translate(30px) translatey(30px);
+}
+
+p{
+    color: snow;
+    text-align: center;
+    font-size: x-large;
+    margin-top: 80px;
+}

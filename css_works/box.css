@@ -1,0 +1,12 @@
+div{
+    height: 200px;
+    width: 400px;
+    background-color: black;
+    margin: 290px auto;
+    padding:20px ;
+    border: 5px yellow double;
+    border-radius: 60px;
+}
+p{
+    color: aliceblue;
+}

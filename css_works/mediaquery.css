@@ -1,0 +1,32 @@
+div{
+    height: 800px;
+    background-color: tan;
+}
+
+/* Responsive */
+
+/* max-width,min-width
+    max-height, min-height 
+    orientation:portrait/lanscape */
+
+/* @media (min-width:500px) and (max-width:600px) {
+    h1{
+        color: tomato;
+        font-size: x-large;
+    }
+    span{
+        display: none;
+    }
+    
+} */
+
+@media (orientation:landscape) {
+    h1{
+        color: tomato;
+        font-size: x-large;
+    }
+    span{
+        display: none;
+    }
+    
+}

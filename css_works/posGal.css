@@ -1,0 +1,44 @@
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+.parent{
+    width: 50%;
+    height: 400px;
+    /* background-color: darkgray; */
+    position: relative;
+    top:10px;
+    left: 400px;
+}
+
+.c{
+    width: 20%;
+    height: 250px;
+    border: 2px solid black;
+    position: absolute;
+    top: 70px;
+    
+}
+
+.c1{
+    background-color: aqua;
+    left: 30px;
+}
+
+.c2{
+    background-color: burlywood;
+    left: 200px;
+}
+
+.c3{
+    background-color: springgreen;
+    left: 370px;
+}
+
+.c4{
+    background-color: tomato;
+    left: 540px;
+}

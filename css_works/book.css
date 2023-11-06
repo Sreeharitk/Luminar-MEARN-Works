@@ -1,0 +1,104 @@
+/* Golbal */
+@import url('https://fonts.googleapis.com/css2?family=Kenia&family=Pacifico&display=swap');
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-image: url("./images/wallpaperflare.com_wallpaper.jpg");
+    background-size: cover;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+    color: snow;
+    font-family:'Pacifico', cursive;
+    font-size: large;
+}
+
+/* Main */
+
+.s1{
+    display: grid;
+    grid-template-columns: 6fr 6fr 6fr 6fr;
+    grid-template-rows: 500px 500px;
+    /* height: 646px; */
+    grid-gap: 30px;
+    text-align: center;
+    color:black;
+    margin-left: 70px;
+}
+
+.c{
+    background-color:honeydew;
+    border-radius: 20px;
+    width: 90%;
+    height:90%;
+    line-height: 1;
+}
+
+.c:hover{
+    background-color:rgba(240, 255, 240, 0.286);
+    color:azure;
+}
+
+.c5,.c6,.c7,.c8{
+    margin-top: 0;
+}
+
+img{
+    height: 37%;
+    width: 50%;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+}
+h2{
+    margin-bottom: 0
+}
+.aut{
+    margin-top: 0;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    background-color: #2B0455;
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2), 0 6px 20px 0 rgba(0, 0, 0, 1.2);
+}
+
+button:hover{
+    background-color: rgba(78, 20, 140,60%);
+    transform: scale(1.2);
+}
+/* each buttons */
+.b1{
+    margin: 50px;
+}
+.b2{
+    margin: 32px;
+}
+.b3{
+    margin: 42px;
+}
+.b4{
+    margin: 21px;
+}
+.b5{
+    margin: 34px;
+}
+.b6{
+    margin: 52px;
+}
+.b7{
+    margin: 53px;
+}
+.b8{
+    margin: 56px;
+}

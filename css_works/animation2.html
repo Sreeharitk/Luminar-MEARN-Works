@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 500px auto;
+            background-color: cadetblue;
+            animation: anim 1s ease-out 1s infinite;
+            transition: 2s ease-in;
+            border-radius: 90px;
+        }
+
+        div:hover{
+            animation-play-state: paused;
+        }
+        @keyframes anim {
+            0%{
+                width: 100px;
+                background-color: brown;
+                transform: rotate(0deg);
+                margin-left: 100px;
+            }
+            50%{
+               width: 150px;
+               background-color: violet;
+               transform: rotate(90deg);
+               margin-left: 200px;
+            }   
+            100%{
+                width: 200px;
+                background-color: springgreen;
+                transform: rotate(180deg);
+                margin-left: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

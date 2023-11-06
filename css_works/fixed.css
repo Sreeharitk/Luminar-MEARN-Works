@@ -1,0 +1,18 @@
+.c2{
+    width: 200px;
+    height: 200px;
+    background-color: chocolate;
+    position: fixed;
+    top: 100px;
+    left: 600px;
+}
+
+
+.c1{
+    width: 200px;
+    height: 400px;
+    margin-top: 0;
+    background-color: cornflowerblue;
+    position: sticky;
+    top: 0;
+}

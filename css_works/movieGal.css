@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Kenia&display=swap');
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #343434;
+    overflow: hidden;
+    /* overflow-y: scroll; */
+}
+
+.content{
+    max-width: 3000px;
+    width: 99%;
+    margin: auto;
+}
+
+.checked{
+    color: orange;
+}
+/* Header */
+.head{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.title{
+    color: red;
+    display: inline-block;
+    margin-left: 20px;
+    font-family: 'Kenia', cursive;
+    font-size: large;
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 700;
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 30px;
+    border-radius: 8px;
+    background-color:red;
+    color: black;
+}
+
+/* heading */
+.heading{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color: snow;
+}
+.heading h1{
+    display: block;
+    font-size: xx-large;
+    font-weight:bolder;
+    line-height: 40px;
+    font-family: 'Croissant One', cursive;
+}
+
+.demo{
+    display: flex;
+    justify-content: space-between;
+}
+
+i{
+    margin-top: 20px;
+    margin-right: 5px;
+}
+/* movie list 1 */
+
+.sub1{
+    color: snow;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+.m1 div{
+    text-align: center;
+    margin-right: 10px;
+}
+
+.m1{
+    display: flex;
+    /* justify-content:space-between; */
+}
+
+.m1 h2,p{
+    text-align: center;
+    color: snow;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+
+.m1 p{
+    font-size: 17px;
+}
+
+span{
+    margin-top: 10px;
+}

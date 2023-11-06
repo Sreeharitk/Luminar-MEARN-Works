@@ -1,0 +1,46 @@
+
+/* original flex direction */
+.row{
+    /* margin: 100px auto; */
+    /* width: 90%;
+    height: 500px; */
+    /* background-color: darkgray; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+
+/* change direction of flex */
+/* .row{
+    margin: 100px auto;
+    width: 90%;
+    height: 500px;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}  */
+
+
+.col{
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    margin-top: 50px;
+}
+
+.col-1{
+    background-color: aqua;
+}
+.col-2{
+    background-color: rgb(255, 0, 0);
+}
+.col-3{
+    background-color: rgb(119, 255, 0);
+}
+.col-4{
+    background-color: rgb(255, 115, 0);
+}

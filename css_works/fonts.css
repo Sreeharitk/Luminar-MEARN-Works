@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&family=Pacifico&display=swap');
+body{
+    background-color:sandybrown;
+}
+h1{
+    color:brown;
+    text-align: center;
+    font-family:'Pacifico', cursive;
+}
+p{
+    color:darkmagenta;
+    font-size: medium;
+    text-align: center;
+    font-family: 'Kenia', cursive;
+}
