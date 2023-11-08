@@ -106,8 +106,3 @@
 // for(i=0;i<10;i++){
 //     console.log(fibo(i));
 // } 
-
-function hello(){
-    console.log("Hello world");
-}
-helloO()

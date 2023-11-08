@@ -93,8 +93,3 @@
 //     }
 // }
 // prime(3,10)
-
-function sum(a,s){
-    var sum = a + s
-    console.log(sum);
-}
