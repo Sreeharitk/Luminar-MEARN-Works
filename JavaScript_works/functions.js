@@ -42,32 +42,32 @@
 // prime(5)
 
 //fibonacci
-// function fibo(n,num1,num2){
-//     // var num1 = 0
-//     // var num2 = 1
-//     for(;n>0;n--){
-//         console.log(num1);
-//         sum = num1 + num2
-//         num1 = num2
-//         num2 = sum
+// function fibo(n){
+//     var num1 = 0
+//     var num2 = 1
+//     for(i=1;i<=n;i++){//i = 5 
+//         console.log(num1);// num1 = 2 ,num2 =3
+//         num3 = num1 + num2 //num3 = num1+num2 => 2 + 3 = 5
+//         num1 = num2 // num1 <= num2 == 3
+//         num2 = num3 //num2 <= num3 == 5
 //     }
 // }
-// fibo(10,0,1)
+// fibo(10)
 
 //sum of non prime number from range1 to range 2
 // function nprime(r1,r2){
 //     sum = 0
-//     for(;r1<=r2;r1++){
-//         for(i=2;i<r1;i++){
+//     for(r1;r1<=r2;r1++){ 
+//         for(i=2;i<r1;i++){ 
 //             if(r1%i==0){
-//                 sum += r1
+//                 sum += r1 //sum=10
 //                 break
 //             }
 //         }
 //     }
 //     console.log(sum);
 // }
-// nprime(3,15)
+// nprime(3,7)
 
 //global variable
 // function demo(){

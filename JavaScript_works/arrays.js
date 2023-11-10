@@ -124,3 +124,87 @@
 //     console.log("Prime Array:",prime,"And","Non Prime Array:",nonprime);
 // }
 // primeArray([2,5,8,9,34,56,11]);
+
+
+// middile element in an array
+// middleElement = a =>{
+//     return a[Math.floor(a.length-1/2)]
+// }
+// console.log(middleElement([5,6,8,3,2]));
+
+
+
+
+//count of words stating with a vowel
+// vowelCount = s =>{
+//     count = 0
+//     var a = s.toLowerCase().split(" ")
+//     for(i of a){
+//         if(i[0]=='a'||i[0]=='e'||i[0]=='i'||i[0]=='o'||i[0]=='u'){
+//             count++
+//         }
+//     }
+//     return count
+// }
+// s = "Hi apple beans icecream"
+// console.log(vowelCount(s));
+//----------------------------------------------------------------------------
+
+
+//sorting method
+// a = [6,4,2,1,3,5]
+// console.log(a.sort((n1,n2)=>n1-n2));
+// console.log(a.sort((n1,n2)=>n2-n1));
+
+//Binary search methon
+// a = [1,2,55,77,99,23,45,67]
+// binarySearch = (a,e)=>{
+//     var count = 0
+//     // var flag = 0
+//     var lower = 0
+//     var upper = a.length-1
+//     a.sort((n1,n2)=>n1-n2)
+//     while(lower<=upper){
+//         count++
+//         middleIndex = Math.floor((upper+lower)/2)
+//         if(a[middleIndex]==e){
+//             break
+//         }else if(e>a[middleIndex]){
+//             lower = middleIndex+1
+//         }else if(e<a[middleIndex]){
+//             upper = middleIndex-1
+//         }
+//     }
+//     return a[middleIndex]==e?"Its present "+count:"Not present "+count
+// }
+// console.log(binarySearch([1,2,55,77,99,23,45,67],67));
+
+
+//sum of 2 elements in array matching sum with dsa
+//[6,4,3,5,1,2]
+// sort above array
+//if the to be found sum is greater than sum of lower and upper index then decrese the upper value
+//if the to be found sum is less than sum of lwer and upper index then incrase the lower value
+// sumArray = a =>{
+//     count = 0
+//     lower = 0 
+//     upper = a.length-1 
+//     sum = 7
+//     a.sort((a1,b1)=>a1-b1) 
+//     while(lower<=upper){
+//         count++
+//         if(a[lower]+a[upper]==sum){ 
+//             console.log([a[lower],a[upper]]);
+//             lower++
+//             upper--
+//         }
+//         else if(a[lower]+a[upper]>sum){ 
+//             upper--
+//         }
+//         else if(a[lower]+a[upper]<sum){ 
+//             lower++
+//         }
+//     }
+//     console.log(count);
+// }
+// sumArray([6,4,3,5,1,2])
