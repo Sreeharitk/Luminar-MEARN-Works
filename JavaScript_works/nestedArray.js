@@ -14,13 +14,13 @@
 // greaterThan10(a);
 
 
-// employees = [
-//     [3,"Sreehari","developer","Kochi",950000,3],
-//     [2,"Jazim","product engineer","Dubai",900000,3],
-//     [5,"Suni","tester","Rain forest",30000,4],
-//     [1,"Revanth","developer","Calicut",50000,1],
-//     [4,"Aron","tester","Rajasthan",40000,2]
-// ]
+employees = [
+    [3,"Sreehari","developer","Kochi",950000,3],
+    [2,"Jazim","product engineer","Dubai",900000,3],
+    [5,"Suni","tester","Rain forest",30000,4],
+    [1,"Revanth","developer","Kochi",50000,1],
+    [4,"Aron","tester","Rajasthan",40000,2]
+]
 //sorting nested array
 // console.log(employees.sort((a,b)=>a[0]-b[0]));
 
@@ -41,3 +41,40 @@
 //     }
 // }
 // nameEmployees(employees)
+
+//find employee with lowest salary
+// lowSalary = e =>{
+//     // for(i of e){
+//     //     return `employee with lowest salary is: ${i[1]}`;
+//     // }
+//     // console.log(employees.sort((a,b)=>a[4]-b[4])[0][1]);
+//     e = employees.sort((a,b)=>a[4]-b[4])
+//     return e
+// }
+// lowSalary(employees);
+
+//employee with highest experience
+// highExp = e =>{
+//     console.log(e.sort((a,b)=>b[5]-a[5])[0][1]);
+// }
+// highExp(employees);
+
+//details of suni
+// suniDet = e =>{
+//     for(i of e){
+//         if(i[0]==5){
+//             return i
+//         }
+//     }
+// }
+// console.log(suniDet(employees));
+
+//find developers from kochi
+// devKochi = e =>{
+//     for(i of e){
+//         if(i[2]=="developer"&&i[3]=="Kochi"){
+//             console.log(i[1]);
+//         }
+//     }
+// }
+// devKochi(employees);

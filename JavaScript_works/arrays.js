@@ -133,7 +133,88 @@
 // console.log(middleElement([5,6,8,3,2]));
 
 
+//common array 
+// commonArray = (a1,a2) =>{
+//     comArray = []
+//     for(i of a1){
+//         for(j of a2){
+//             if(i==j){
+//                 comArray.push(i)
+//             }
+//         }
+//     }
+//     return comArray
+// }
+// console.log(commonArray([1,2,3,4,5],[3,4,5,6,7,8]));
 
+
+//array element present or not
+// presentArray = (a,e) =>{
+//     count = 0
+//     for(i of a){
+//         count++
+//         if(i==e){
+//             return `Its present ${count}`
+//         }
+//     }
+//     return `Not present ${count}`
+// }
+// console.log(presentArray([1,2,55,77,99,23,45,67],67));
+
+
+//splitting string elements using .split() method
+// s = "hi,hello,how,hey"
+// a = s.split(",")
+// console.log(a);
+
+
+//create a new array with elements starting with given character
+//var s = "React-Bootstrap replaces the Bootstrap JavaScript. Each component has been built from scratch as a true React component, without unneeded dependencies like jQuery."
+// a = s.split(" ")
+// startArray = (a,e) =>{
+//     newArray = []
+//     for(i of a){
+//         i = i.toLowerCase()
+//         if(i[0]==e){
+//             newArray.push(i)
+//         }
+//     }
+//     return newArray
+// }
+// console.log(startArray(a,"r"));
+
+//find total no of words in s
+// a = s.split(" ").length
+// console.log(a);
+
+
+//longest word in s
+// var s ='Built with compatibility in mind'
+// s = s.split(" ")
+// longestWord = s =>{
+//     long = s[0]
+//     for(i of s){
+//         if(i.length>long.length){
+//             long = i
+//         }
+//     }
+//     return long
+// }
+// console.log(longestWord(s));
+
+
+// a = [6,4,2,3,1,5]
+// sumOfArray = a =>{
+//     sum = 5
+//     for(i of a){
+//         for(j of a){
+//             if(i+j==sum){
+//                 console.log([i,j]);
+//             }
+//         }
+//     }
+// }
+// sumOfArray(a)
 
 //count of words stating with a vowel
 // vowelCount = s =>{
