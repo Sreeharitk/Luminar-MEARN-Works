@@ -31,5 +31,3 @@ products = [
 
 //re-aarange products according to their id
 // console.log(products.sort((a,b)=>a[0]-b[0]));
-
-console.log(products);
