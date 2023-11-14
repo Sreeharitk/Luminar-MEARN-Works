@@ -53,11 +53,17 @@ employees = [
 // }
 // lowSalary(employees);
 
+// console.log(employees.reduce((a,b)=>a[4]<b[4]?a:b)[1]) //with reduce method
+
+
 //employee with highest experience
 // highExp = e =>{
 //     console.log(e.sort((a,b)=>b[5]-a[5])[0][1]);
 // }
 // highExp(employees);
+
+// console.log(employees.reduce((a,b)=>a[5]>b[5]?a:b)[4]); //with array method(reduce)
+
 
 //details of suni
 // suniDet = e =>{
@@ -69,6 +75,9 @@ employees = [
 // }
 // console.log(suniDet(employees));
 
+// console.log(employees.find(i=>i[1]=="Suni"));
+
+
 //find developers from kochi
 // devKochi = e =>{
 //     for(i of e){
@@ -78,3 +87,6 @@ employees = [
 //     }
 // }
 // devKochi(employees);
+
+//total salaty of of employees
+// console.log(employees.map(i=>i[4]).reduce((a,b)=>a+b));

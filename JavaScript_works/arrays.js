@@ -202,7 +202,7 @@
 // }
 // console.log(longestWord(s));
 
-
+    
 // a = [6,4,2,3,1,5]
 // sumOfArray = a =>{
 //     sum = 5
@@ -270,7 +270,7 @@
 //     count = 0
 //     lower = 0 
 //     upper = a.length-1 
-//     sum = 7
+//     sum = 8
 //     a.sort((a1,b1)=>a1-b1) 
 //     while(lower<=upper){
 //         count++

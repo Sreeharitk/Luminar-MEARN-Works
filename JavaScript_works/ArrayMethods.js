@@ -38,3 +38,13 @@
 
 //find testers name
 // console.log(employees.filter(i=>i[2]=="tester").map(j=>j[1]));
+
+
+//-----------------Reduce method-------------
+// a = [1,2,3,4,5,6]
+//sum of each elements
+// console.log(a.reduce((a,b)=>a+b));
+//greatest element
+// console.log(a.reduce((a,b)=>a>b?a:b));
+//smallest element
+// console.log(a.reduce((a,b)=>a<b?a:b));
