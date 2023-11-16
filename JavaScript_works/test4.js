@@ -45,7 +45,7 @@ courses=[
 
 //6.find list of courses with fee 20000 to 40000 range?
 // feeRange = c =>{
-//     return c.filter(i => i[2]>=20000&&i[2]<=40000)
+//     return c.filter(i => i[2]>=20000&&i[2]<=40000).map(i=>i[1])
 // }
 // console.log(feeRange(courses));
 
@@ -75,9 +75,13 @@ courses=[
 
 //11.Find total fee of both MEAN and MERN?
 // meanMern = c =>{
-//     a = c.find(i=>i[1]=="MEAN")[2]
-//     b = c.find(i=>i[1]=="MERN")[2]
-//     return a+b
+//     return c.filter(i=>i[1]=="MEAN"||i[1]=="MERN").reduce((a,b)=>a[2]+b[2]) 
 // }
 // console.log(meanMern(courses));
 
+
+//check if we can do a course with 30000
+// console.log(courses.some(i=>i[2]<=30000));
+
+//all courses fee using forEach
+// courses.forEach(i=>console.log(i[2]))

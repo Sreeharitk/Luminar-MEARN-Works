@@ -48,3 +48,28 @@
 // console.log(a.reduce((a,b)=>a>b?a:b));
 //smallest element
 // console.log(a.reduce((a,b)=>a<b?a:b));
+
+
+//--------------------Some Method---------------------
+// a = [9,4,3,5]
+// Checking if an even number present or not
+// console.log(a.some(i=>i%2==0));
+
+
+//--------------------Includes Method---------------------
+// a = [9,4,3,5]
+// //checking if an element is present or not
+// console.log(a.includes(3));
+
+//--------------------forEach Method---------------------
+// a = [1,2,3,4]
+// a.forEach(i=>console.log(i**3))
+
+//--------------------flat Method---------------------
+// a = [
+//     [34,65],
+//     [5,66],
+//     [11,2]
+// ]
+//elements greater than 10
+// console.log(a.flat().filter(i=>i>10));

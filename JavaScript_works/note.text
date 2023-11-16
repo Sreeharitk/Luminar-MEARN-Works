@@ -1,0 +1,25 @@
+some - we get true or false as output using condition(eg:- Checking if an element is present in an array or not)
+
+includes - checking elements directly using an element instead of a condition(return true or false) - only works on single array not on nested arrays
+
+forEach - Same working as map() method but output will be sperate elements instead of an array(map is usually better)
+
+flat - This used to convert a nested array into a single array - to apply flat multiple time we need to give depth (eg:- flat(2))
+
+----------------------------------
+OOPS - Object Oriented Programming
+----------------------------------
+JS - Has procedural programming - Function Based
+   - Has Object Oriented programming - class based / object based programming
+
+Important things to know in OOPS
+--------------------------------
+Class     - Acts as a blueprint for the object
+Object    - A real-world entity created using class
+Reference - a variable which is used to store objects
+
+constructor
+inheritence
+polymorphism
+abstraction
+encapsulation
