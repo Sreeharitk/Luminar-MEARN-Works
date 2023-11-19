@@ -23,3 +23,9 @@ inheritence
 polymorphism
 abstraction
 encapsulation
+
+instance variable - if we want to use the variable in multiple methods in a class. (we use "this" keyword to set instance variables)
+
+Class attributes - can be accessed by all the methods in the class and do not required to be input field while calling the object method
+
+constructor - to initilize an object at the time of object creation (constructor()- inbuilt method)
