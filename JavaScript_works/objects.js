@@ -90,10 +90,37 @@ st1 = { college: 'SOE', name: 'Sreehari', roll: 82, 123:10 }
 // s = "Luminar Technolab"
 // //write a function to find first and last recursive elements in s
 // recurs = s =>{
-//     str = ""
+//     str = {}
 //     n = {}
-//     s.toLowerCase().split("").map(i=>i in n?str+=i:n[i]=1)
-//     console.log(n);
-//     return `first recursive letter is ${str[0]} and last recursive letter is ${str[str.length-1]}`
+//     s.toUpperCase().split(" ").join("").split("").map(i=>i in n?str[i]+=1:n[i]=1)
+//     str = Object.keys(str)
+//     console.log("First letter is:",str[0],"and","letter is:",str[str.length-1]);
 // }
-// console.log(recurs(s));
+// recurs(s)
+
+
+//Array of Objects
+var mobiles = [
+    {name:"nokia",price:30000,display:"lcd",nw:"4g"},
+    {name:"apple",price:100000,display:"led",nw:"5g"},
+    {name:"samsung",price:80000,display:"led",nw:"5g"},
+    {name:"oppo",price:15000,display:"lcd",nw:"4g"},
+    {name:"mi",price:25000,display:"lcd",nw:"4g"}
+]
+//find total no of mobiles
+// console.log("Total no of mobiles are:",mobiles.length);
+
+//Display all mobile names
+// console.log(mobiles.map(i=>i.name));
+
+//Find mobiles with 4g network
+// console.log(mobiles.filter(i=>i.nw=="4g").map(i=>i.name));
+
+//Find display of samsung
+// console.log(mobiles.find(i=>i.name=="samsung").display);
+
+//Find mobile with hight price
+// console.log(mobiles.reduce((a,b)=>a.price>b.price?a:b).name);
+
+//Total price
+// console.log(mobiles.map(i=>i.price).reduce((a,b)=>a+b));
