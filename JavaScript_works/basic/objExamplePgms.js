@@ -71,10 +71,10 @@ var accounts = [
 // console.log(accounts.map(i=>i.transactions).flat().filter(i=>i.amount>3000));
 
 //3.print credit transaction of account 1002?
-// console.log(accounts.map(i=>i.transactions).flat().filter(i=>i.to==1002).map(i=>i.amount));
+// console.log(accounts.map(i=>i.transactions).flat().filter(i=>i.to==1002));
 
 //4.print debit transaction of account 1002?
-// console.log(accounts.find(i=>i.acno==1002).transactions.map(i=>i.amount));
+// console.log(accounts.find(i=>i.acno==1002).transactions);
 
 //5.print highest balance ac details?
 // console.log(accounts.reduce((a,b)=>a.balance>b.balance?a:b));
