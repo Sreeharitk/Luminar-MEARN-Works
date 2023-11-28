@@ -88,5 +88,5 @@ employees = [
 // }
 // devKochi(employees);
 
-//total salaty of of employees
+//total salary of of employees
 // console.log(employees.map(i=>i[4]).reduce((a,b)=>a+b));
