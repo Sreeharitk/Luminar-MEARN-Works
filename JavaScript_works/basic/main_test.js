@@ -154,7 +154,7 @@ a=[10,20,10,20,20,30,10,20,20,30]
 
 
 names=["amal","vinu","ashok ram","amal","arun","anu","vonod "]
-//9.Find the longest and shortest names from array names
+// 9.Find the longest and shortest names from array names
 // longShort = (n)=>{
 //     long = n.reduce((a,b)=>a.length>b.length?a:b)
 //     short = n.reduce((a,b)=>a.length<b.length?a:b)
@@ -172,7 +172,7 @@ names=["amal","vinu","ashok ram","amal","arun","anu","vonod "]
 //         if(arr[c]==i){
 //             c++
 //         }else{
-//             console.log(i+" ");
+//             console.log(i);
 //         }
 //     }
 // }
