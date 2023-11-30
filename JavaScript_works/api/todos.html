@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="text-center">List of todos</h1>
+    <table class="table container w-50 table-striped-columns table-dark">
+        <thead>
+          <tr>
+            <th scope="col">UserID</th>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Completed</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider" id="res">
+
+        </tbody>
+      </table>
+</body>
+<script>
+    //                                                        easy method to convert json to js(out.json())
+    fetch("https://jsonplaceholder.typicode.com/todos").then(out=>out.json()).then(result=>displayData(result))
+
+    function displayData(arrayOfData){
+        for(i of arrayOfData){
+            rowData = `
+                <tr>
+                    <td>${i.userId}</td>
+                    <td>${i.id}</td>
+                    <td>${i.title}</td>
+                    <td>${i.completed}</td>
+                </tr>
+            `
+            res.innerHTML += rowData    
+        }
+    }
+</script>
+</html>
