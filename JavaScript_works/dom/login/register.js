@@ -15,6 +15,8 @@ function registered(){
             //storing in local storage
             localStorage.setItem(userName,JSON.stringify(users))
             alert("Registered successfully")
+            //redirect to login page
+            window.location = "index.html"
         }else{
             noMatch.innerHTML = "Passwords doesnt match"
         }

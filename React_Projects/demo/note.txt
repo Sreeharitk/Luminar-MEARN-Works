@@ -1,0 +1,33 @@
+React
+--------
+
+- front-end library
+- Function based compononets - stateless compononets
+
+---------------
+
+-useState - hook used to create state in React
+
+-props(properties) -> share data from parent to child compononet 
+
+-Destructuring in JS
+    obj = {name:"Hari",age:23}
+    how we ususally call this and put it a new variable- 
+        const name  = obj.name
+        const age = obj.age
+    By using the Destructuring method(only works if variable name is same as key name)
+        const {name} = obj
+        const {age} = obj
+    By further simplification we can also write this as =>
+        const {name,age} = obj
+
+hooks in React
+------------------
+Function that let you "hook into" react state and lifecycle features from funciton compononets
+ -useState- hook used to create state in react
+
+
+Bonus notes
+-------------
+
+- Use "&&" instead of "?" in ternary if we only want the true case

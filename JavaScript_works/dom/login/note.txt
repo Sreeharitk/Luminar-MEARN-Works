@@ -32,3 +32,7 @@ Cookies
 4kb storage space per domain
 These are server related data(send or recieve data from server)
 automatically expires or user deletes the data
+
+---------------
+-> in localStorage we only data that is specific to that system or
+   system user and data which is not deleted like upon logging out.
