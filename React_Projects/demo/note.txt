@@ -6,11 +6,23 @@ React
 
 ---------------
 
--useState - hook used to create state in React
+types of compononets
+---------------------
+- class based compononets - statefull compononets(inbuild compononets) - angular
+- function based compononets - stateless compononets(no inbuild compononets) - react
+
+Data sharing in React
+---------------------
+
+Sharing data in basic react is only possible from parent to child compononets.
+
+-state => a  js object used to store datas in react compononets
+        variables in react compononets are local variables (we can update them globally)
+
 
 -props(properties) -> share data from parent to child compononet 
 
--Destructuring in JS
+-Destructuring in JS =>
     obj = {name:"Hari",age:23}
     how we ususally call this and put it a new variable- 
         const name  = obj.name
@@ -24,7 +36,8 @@ React
 hooks in React
 ------------------
 Function that let you "hook into" react state and lifecycle features from funciton compononets
- -useState- hook used to create state in react
+
+ -useState => hook used to create state in react
 
 
 Bonus notes
