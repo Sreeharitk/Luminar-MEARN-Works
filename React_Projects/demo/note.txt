@@ -33,14 +33,138 @@ Sharing data in basic react is only possible from parent to child compononets.
     By further simplification we can also write this as =>
         const {name,age} = obj
 
+
+Data sharing in siblings
+---------------------------
+-State lifting => process of sharing state and its function of a parent compononet with its child components
+--------------
+-example =>
+	const [state,function](usestateof parent component)
+	parent ---child 1 -> function
+		--child 2 -> state
+		(Here child 1 can update child 2's data)
+
+
 hooks in React
 ------------------
 Function that let you "hook into" react state and lifecycle features from funciton compononets
 
- -useState => hook used to create state in react
+->useState => hook used to create state in react
+
+->useEffect => 	hook used to run codes at the starting/opening time of a component in this after the {} we put a [] seperated by a 		comma to ensure that the component only works one time at the starting instead of keep on working in a loop.
+		
+		Also if we add any states or variables inside the empty [], then whenever the state data or variable changes the 		useEffect will work(not just at the loading time of component).
+
+
+->useParams => Used to access URL params in react
+
+
+React-router-dom
+----------------
+library in react used to apply routing(re-direction) in react projects
+->installation => npm i react-router-dom
+->components needed for rounting => BrowserRouter, Routes, Route
+->Route => used to set path for components which are used as path
+->Routes => when we are using more than one Route(in the case website with multiple pages),
+		Routes can be used to wrap these multiple Route's
+->BrowserRouter => used to set all the paths in App.js(Main component), then only can we do routing in App.js
+
+->While setting paths, to set the landing path just give an empty "/" inside path property (path="/")
+
+->Set the page you want the path to be set to by using "element" property and assigning it to a page component inside "{}"
+	eg:- element = {<Home/>}
+ 
+Re-directing to another page
+----------------------------
+->Two ways => using a links(Link component from react-router-dom) or method(window.location) and each of these has its own use cases
+
+->Link component => to set the destination link we use "to" property and set the page link there in quotes(can use inline stying for 			changing link tag styles(same as in css))
+
+->URL params => This is used to set something that is unique to the item inside the url of that item like id,name etc..
+		And we set this inside the path set for the item. also insteal of text we set a URL param variable which 
+		us different since it start with a ":" followed by that product unique identifier(its given as an ID).
+
+
+
+Server Creation
+-----------------
+->Frist create a seperate folder for server in the parent folder where the react project is currently placed
+->Inside the newly created server folder, open terminal and enter => npm init (installs pakage.json file to store all node  	dependencies)
+->The server we create is "json server"
+
+JSON server
+--------------
+->json-server => library used to create json server
+
+->npm i json-server => cmd used to install json server
+
+->While importing a json server library to a js file, we use "require" instead of "import" and followed by the server library name 	inside quotes and enclosed in a ()
+
+
+cors(cross origin resource sharing)
+-----------------------------------
+->Library used to connect the server with front-end(client app) 
+
+->install cmd=> npm i cors
+
+->Here in the connection code inside cors(),we do not give url if the webiste is going to be hosted because a hosted website domain may 	vary from users. We should only give url(front-end) if we testing locally
+
+middleware
+------------
+->This works first before any other api request is resolved. Mainly used to convert json to js while recieving data from client side.
+
+->In json-server we use the following middleware => defaults() - used to convert json data to js
+
+nodemon
+--------
+->nodemon is a tool that helps develop Node. js based applications by automatically restarting the node application when file changes 	in the directory are detected
+->To run => npx nodemon filename.js
+
+
+ApiCall
+---------
+library used -> Axios => faster than fetch and we do not need resolve it manually(no need change json to js manually)
+command used to install axios -> npm i axios
+
+
+async and await
+-----------------
+if a function contains an asynchronous code(api call) then to avoid using "then" and "catch" we can type "async" before the parameter () of that function and "await" before the aynchronous code in that function.
+example -> 
+	without =>
+	asyncFuncton =()=>{
+		asyncCode().then(data=>{
+			return data
+		})
+	}
+	
+	with =>
+	asyncFunction = async() =>{
+		return await asyncCode()
 
 
 Bonus notes
 -------------
 
 - Use "&&" instead of "?" in ternary if we only want the true case
+
+- Post images => website used to host images(choose the direct link after hosting)
+
+- Remove bg => website used to remove background images
+
+-In react instead of row or col tags we have Row and Col components(to define screen properties use lg={6},md={12} etc. inside Col 	component)
+
+-Sometimes certain events can run in loops such as button events in froms. So to prevent this looping of event, we have special method 	which is "e.preventDefault()" here "e" is event argument given and this method prevents the events default functioning which is 	running in loops.
+
+- the ".status" is used to find the status code of a api call
+
+-React toastify => library for more alret styles and much more
+
+- to drag an entire element give "draggable" attribute to it and use "onDragStart" event to specify what happenes after dragging. Also 	give a "droppable" attribute to the element or div where the dragged item is being dropped.
+	Also in the dropping element 2 events are neccessary, "onDragOver" and "onDrop". These 3 events are necessary for this process 	to work as intended.
+
+-Date fns library => used to manupilate date format like we intend (while use "new Date()" funtion)
+
+- /* /index.html 200 => This should be given inside the public folder under "_redirects" file in every react applications to avoid 	crashing of hosted webpage while refreshing.
+
+- To host backed use Render.com

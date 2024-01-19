@@ -1,0 +1,15 @@
+
+.ct1{
+    margin-bottom: 20px;
+}
+
+.ct-b{
+    width: 400px !important;
+    background-color: #ffd200 !important;
+    border: #ffd200 !important;
+    color: black !important;
+}
+
+.catMovItems:hover{
+    animation-play-state: paused;
+}
